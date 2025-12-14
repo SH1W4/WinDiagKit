@@ -115,7 +115,7 @@ If you absolutely must change the username, here's the safest approach:
 ### 📚 Related Resources
 
 - [Microsoft Official Docs: Why you can't rename user folder](https://support.microsoft.com/en-us/windows/rename-your-windows-user-account-and-user-folder-870d3e26-0c8c-4e0e-9c7e-f8e5e8f8e8e8)
-- [WinDiagKit: Safe System Optimization](../README.md)
+- [Orbit-DevOps: Safe System Optimization](../README.md)
 - [Alternative Solutions](./ALTERNATIVES_TO_USERNAME_CHANGE.md)
 
 ### 🤝 Community Feedback
@@ -135,4 +135,4 @@ This guide was originally created when we thought username changes were feasible
 **Last Updated:** 2025-12-14  
 **Status:** ⚠️ DEPRECATED - DO NOT USE
 
-For current best practices, see the main [WinDiagKit README](../README.md).
+For current best practices, see the main [Orbit-DevOps README](../README.md).

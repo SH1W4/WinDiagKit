@@ -1,6 +1,6 @@
-# 🤖 WinDiagKit MCP Agent
+# 🤖 Orbit-DevOps MCP Agent
 
-This directory contains the **Model Context Protocol (MCP)** implementation for WinDiagKit. It turns the toolkit into an intelligent agent that AI coding assistants (like Claude Desktop, Cursor, etc.) can communicate with to diagnose and optimize your system directly.
+This directory contains the **Model Context Protocol (MCP)** implementation for Orbit-DevOps. It turns the toolkit into an intelligent agent that AI coding assistants (like Claude Desktop, Cursor, etc.) can communicate with to diagnose and optimize your system directly.
 
 ## 🌟 Capabilities
 
@@ -16,7 +16,7 @@ The MCP agent enables your AI assistant to:
 ### Prerequisites
 
 - Python 3.10+
-- WinDiagKit (Root repository)
+- Orbit-DevOps (Root repository)
 
 ### Setup
 
@@ -39,10 +39,10 @@ Add the following to your `claude_desktop_config.json`:
 ```json
 {
   "mcpServers": {
-    "WinDiagKit": {
+    "Orbit-DevOps": {
       "command": "python",
       "args": [
-        "C:/Path/To/WinDiagKit/mcp/server.py"
+        "C:/Path/To/Orbit-DevOps/mcp/server.py"
       ]
     }
   }

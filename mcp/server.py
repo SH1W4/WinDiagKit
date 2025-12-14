@@ -10,7 +10,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("windiagkit-mcp")
 
 # Initialize FastMCP Server
-mcp = FastMCP("WinDiagKit")
+mcp = FastMCP("Orbit-DevOps")
 
 import platform
 
@@ -97,7 +97,7 @@ def run_safe_cleanup(dry_run: bool = True) -> str:
 @mcp.tool()
 def read_architecture() -> str:
     """
-    Returns the Enterprise Architecture of WinDiagKit.
+    Returns the Enterprise Architecture of Orbit-DevOps.
     """
     arch_path = os.path.join(BASE_DIR, "ARCHITECTURE.json")
     if os.path.exists(arch_path):

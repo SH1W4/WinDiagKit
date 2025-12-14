@@ -24,7 +24,7 @@ If applicable, add screenshots to help explain your problem.
 ## 🔧 Environment
  - OS: [e.g. Windows 11, Ubuntu 22.04, macOS 14.0]
  - Python Version: [e.g. 3.9, 3.10, 3.11]
- - WinDiagKit Version: [e.g. 0.1.0]
+ - Orbit-DevOps Version: [e.g. 0.1.0]
  - Installation Method: [e.g. pip, source, Docker]
 
 ## 📝 Additional Context

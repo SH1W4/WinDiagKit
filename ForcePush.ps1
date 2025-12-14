@@ -13,7 +13,7 @@ try {
 Write-Host "🚀 Iniciando Push Seguro (Bypassing Credential Manager)..." -ForegroundColor Yellow
 
 # Monta a URL com o token autenticado
-$repoUrl = "https://oauth2:$token@github.com/SH1W4/WinDiagKit.git"
+$repoUrl = "https://oauth2:$token@github.com/SH1W4/Orbit-DevOps.git"
 
 # Executa o push desativando os helpers de credencial do sistema e global
 # -c credential.helper= : Limpa qualquer helper configurado

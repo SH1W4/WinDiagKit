@@ -1,120 +1,101 @@
-# 🔧 WinDiagKit
+# 🪐 Orbit-DevOps
 
 <div align="center">
-  <h3>Windows System Diagnostic & Optimization Toolkit</h3>
+  <h3>The Developer's Workspace Command Center</h3>
   <p>
-    Born from necessity. Built for performance. Optimized for developers.
+    Diagnose. Optimize. Compact. Control.
   </p>
   
   <p>
-    <a href="https://github.com/SH1W4/WinDiagKit/issues">
-      <img src="https://img.shields.io/github/issues/SH1W4/WinDiagKit?style=flat-square&color=blue" alt="Issues" />
-    </a>
-    <a href="https://github.com/SH1W4/WinDiagKit/pulls">
-      <img src="https://img.shields.io/github/issues-pr/SH1W4/WinDiagKit?style=flat-square&color=green" alt="Pull Requests" />
-    </a>
     <a href="LICENSE">
       <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" alt="License" />
     </a>
-    <img src="https://img.shields.io/badge/platform-Windows_10%2F11-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Platform" />
-    <img src="https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
+    <img src="https://img.shields.io/badge/platform-Windows_10%2F11%2BWSL2-0078D6?style=flat-square&logo=windows&logoColor=white" alt="Platform" />
+    <img src="https://img.shields.io/badge/PowerShell-7.0%2B-5391FE?style=flat-square&logo=powershell&logoColor=white" alt="PowerShell" />
     <img src="https://img.shields.io/badge/AI-MCP_Ready-purple?style=flat-square&logo=openai&logoColor=white" alt="MCP Ready" />
   </p>
 </div>
 
 ---
 
-**WinDiagKit** represents a professional approach to Windows system maintenance. Originally created to rescue a development machine with critical disk space (5% free), it evolved into an Enterprise-grade toolkit that saved **19.7 GB (+82% capacity)** without deleting a single line of code.
+**Orbit-DevOps** is a comprehensive toolkit designed to keep a developer's Windows environment efficient, clean, and reproducible. It goes beyond simple cleanup to manage the complex footprint of modern development stacks (Docker, WSL2, Anaconda, Node.js).
 
-## 🚀 Why WinDiagKit?
+## 🚀 Why Orbit-DevOps?
 
-- **🛡️ Safe by Design:** Intelligent scripts that distinguish between *cache* (safe to delete) and *data* (must preserve).
-- **🐳 Dev-Aware:** Specifically optimized for developers using Docker, Node.js, Python/Anaconda, and VSCode/Cursor.
-- **⚡ Zero-Install:** Pure PowerShell. No binaries to install. Transparent code you can read.
-- **🏗️ Enterprise Architecture:** Built with proper separation of concerns (Diagnostic -> Analysis -> Execution).
+- **🛡️ Intelligent Maintenance:** Safely reclaims storage from dev tools without breaking projects.
+- **� WSL2 Optimization:** Advanced tools to compact Linux virtual disks (vhdx) that Windows ignores.
+- **💾 Environment Snapshots:** Export and restore your installed tools stack using Winget.
+- **🤖 AI-Powered:** Built-in MCP (Model Context Protocol) server allows AI agents to manage your machine.
 
-## ✨ Key Features
+## ✨ Core Modules
 
-### 🔍 Deep Diagnostics
-- **Storage CSI:** Forensically analyze where every GB is going (User root, AppData, ProgramData).
-- **Docker Inspection:** Identify dangling images, stopped containers, and orphan volumes.
-- **Dev Environment Audit:** Verify toolchains (Git, Python, Node, Rust) and their footprints.
+### 1. 🔍 Deep Diagnostics
+- **Storage CSI:** Forensically analyze where every GB is going (User root, AppData, Docker layers).
+- **Health Checks:** Monitor system vital signs critical for performance.
 
-### 🧹 Intelligent Cleanup
-- **Cursor/VSCode Optimization:** Cleans cached update installers and backup databases while keeping settings intact.
-- **Docker Prune Strategy:** Smart cleaning that respects active containers.
-- **Anaconda Reclamation:** Safely removes unused Python distributions (often 10GB+).
-- **Browser Hygiene:** Cleans caches for Chrome/Edge without losing history or cookies.
+### 2. 🧹 Smart Sanitation
+- **Dev Stack Cleaning:**
+  - **Docker:** Prunes dangling images/volumes while respecting active containers.
+  - **Node/Python:** Cleans global caches and unused environments.
+  - **IDE:** Optimizes Cursor/VSCode caches.
+- **System:** Cleans browser caches and temp files safely.
 
-### 🤖 AI Integration (MCP Agent)
-WinDiagKit includes a native **Model Context Protocol (MCP)** server, turning your diagnostic toolkit into an active agent.
-- **Talk to your system:** Connect Claude Desktop or Cursor to WinDiagKit.
-- **Active Diagnostics:** Ask AI to "Check system health" or "Find deep storage hogs".
-- **Safe Execution:** AI observes strict safety protocols before running any cleanup.
-- **Setup:** See [mcp/README.md](mcp/README.md) for integration guide.
+### 3. 🐧 WSL2 Management (Coming Soon)
+- **Compact:** Shrimp your `ext4.vhdx` files to reclaim "ghost" space deleted inside Linux.
+- **Analyze:** See which WSL distros are eating your drive.
+
+### 4. 📦 Stack Control (Coming Soon)
+- **Snapshot:** `winget export` wrap to backup your toolchain.
+- **Restore:** One-click reinstallation of your dev environment.
+
+## 🤖 AI Integration (MCP Agent)
+
+Orbit-DevOps includes a native **Model Context Protocol (MCP)** server.
+- **Connect:** Link Claude/Cursor to your local machine.
+- **Command:** "Analyze my disk usage" or "Clean Docker garbage".
+- **Documentation:** See [mcp/README.md](mcp/README.md).
 
 ## 🚀 Quick Start
 
-### 1. Diagnostic Scan (Read-Only)
-Check your system health without changing anything:
+### Interactive Menu (The "Orbit" Command)
+*Coming in v1.1.0*
+
+### Manual Execution
+
+**Diagnostic Scan:**
 ```powershell
 .\scripts\diagnostic\SystemDiagnosticUser.ps1
 ```
 
-### 2. Analysis
-Find who is eating your disk space:
+**Storage Analysis:**
 ```powershell
 .\scripts\analysis\ScanStorage.ps1
 ```
 
-### 3. Safe Cleanup
-Run safe optimizations (caches, temp files):
+**Safe Cleanup:**
 ```powershell
 .\scripts\cleanup\AdditionalCleanup.ps1
 ```
 
-### 4. Full Optimization (Admin)
-Deep cleaning including system hibernation and post-reboot tasks:
-```powershell
-# Run as Administrator
-.\scripts\cleanup\PostRebootCleanup.ps1
-```
-
 ## 🏗️ Architecture
 
-WinDiagKit follows a layered architecture pattern:
+Orbit-DevOps follows a modular layer pattern (Presentation -> Logic -> Execution).
+See [ARCHITECTURE.json](ARCHITECTURE.json) for details.
 
-```mermaid
-graph TD
-    A[User] -->|Run| B(Diagnostic Layer)
-    B -->|Output Report| C{Analysis Layer}
-    C -->|Identify Targets| D[Execution Layer]
-    D -->|Safe Cleanup| E[Disk Reclaimed]
-    D -->|Deep Cleanup| F[System Optimized]
-```
+## 📊 Benchmarks
 
-See [ARCHITECTURE.json](ARCHITECTURE.json) for detailed specifications.
+Typical recovery on a Senior Dev workstation:
 
-## 📊 Real-World Results
-
-Case study from the original "Rescue Mission" (v1.0.0):
-
-| Component | Before Usage | After Usage | Reclaimed |
+| Component | Before Orbit | After Orbit | Optimization |
 |-----------|--------------|-------------|-----------|
-| **Cursor Cache** | 13.0 GB | 6.5 GB | **6.5 GB** |
-| **Docker** | 25.0 GB | 0.3 GB | **24.7 GB** |
-| **Anaconda** | 9.4 GB | 0.0 GB | **9.4 GB** |
-| **System Cache** | 6.3 GB | 0.0 GB | **6.3 GB** |
-| **Total** | **5% Free** | **9.2% Free** | **+19.7 GB** |
-
-## ⚠️ Important Notes
-
-- **Username Changes:** We strongly advise **AGAINST** renaming your Windows user folder. See [our detailed guide](docs/DEPRECATED_USERNAME_CHANGE.md) on why this is risky.
-- **Hibernation:** Disabling hibernation (`powercfg -h off`) frees 3-6GB but disables Fast Startup. Re-enable with `powercfg -h on`.
+| **WSL2 Disk** | 64.0 GB | 12.0 GB | **81% Compacted** |
+| **Docker** | 25.0 GB | 0.3 GB | **98% Reduction** |
+| **IDE Caches** | 13.0 GB | 6.5 GB | **50% Reduction** |
+| **Total** | **Critical** | **Healthy** | **Massive Gain** |
 
 ## 🤝 Contributing
 
-we welcome contributions! Please check [CONTRIBUTING.md](CONTRIBUTING.md) and our [Security Policy](SECURITY.md).
+We welcome contributions! Please check [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 📝 License
 

@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-We take security seriously in WinDiagKit. The following versions are currently supported with security updates:
+We take security seriously in Orbit-DevOps. The following versions are currently supported with security updates:
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -31,7 +31,7 @@ Please include the following information in your security report:
 
 ### Security Features
 
-WinDiagKit implements several security measures:
+Orbit-DevOps implements several security measures:
 
 - **Input Validation**: All user inputs are validated and sanitized
 - **Path Traversal Protection**: File system operations are restricted to authorized directories
@@ -41,12 +41,12 @@ WinDiagKit implements several security measures:
 
 ### Security Best Practices
 
-When using WinDiagKit:
+When using Orbit-DevOps:
 
 1. **Environment Variables**: Store sensitive tokens in environment variables, never in code
 2. **File Permissions**: Ensure proper file permissions on configuration files
 3. **Network Security**: Use HTTPS for all API communications
-4. **Regular Updates**: Keep WinDiagKit and its dependencies updated
+4. **Regular Updates**: Keep Orbit-DevOps and its dependencies updated
 5. **Audit Logs**: Monitor sync operations and access patterns
 
 ### Security Contacts
@@ -57,7 +57,7 @@ When using WinDiagKit:
 
 ### Hall of Fame
 
-We recognize security researchers who help improve WinDiagKit's security:
+We recognize security researchers who help improve Orbit-DevOps's security:
 
 *No reports yet - be the first!*
 

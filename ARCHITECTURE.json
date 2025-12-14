@@ -1,8 +1,8 @@
 {
   "$schema": "https://raw.githubusercontent.com/microsoft/vscode/main/extensions/configuration-editing/schemas/devContainer.schema.json",
-  "name": "WinDiagKit Architecture",
+  "name": "Orbit-DevOps Architecture",
   "version": "1.0.0",
-  "description": "Enterprise Architecture Pattern for WinDiagKit - Windows System Diagnostic & Optimization",
+  "description": "Enterprise Architecture Pattern for Orbit-DevOps - Windows System Diagnostic & Optimization",
   
   "architecture": {
     "layers": [
